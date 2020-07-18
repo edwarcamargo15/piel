@@ -159,7 +159,7 @@ sup {
 }
 
 a {
-  color: #f4623a;
+  color: #f1d9ec;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2471,28 +2471,28 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #f4623a;
+  background-color: #f5a8e2;
   border-color: #f4623a;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #f24516;
+  background-color: #ee9be0;
   border-color: #ee3e0d;
 }
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #f24516;
+  background-color: #da99cf;
   border-color: #ee3e0d;
   box-shadow: 0 0 0 0.2rem rgba(246, 122, 88, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #f4623a;
+  background-color: #da99cf;
   border-color: #f4623a;
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #ee3e0d;
+  background-color: #da99cf;
   border-color: #e23a0d;
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
@@ -2637,7 +2637,7 @@ fieldset:disabled a.btn {
 }
 .btn-danger.disabled, .btn-danger:disabled {
   color: #fff;
-  background-color: #dc3545;
+  background-color: #da99cf;
   border-color: #dc3545;
 }
 .btn-danger:not(:disabled):not(.disabled):active, .btn-danger:not(:disabled):not(.disabled).active, .show > .btn-danger.dropdown-toggle {
@@ -10096,7 +10096,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/cara.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
