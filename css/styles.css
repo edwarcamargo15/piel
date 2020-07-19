@@ -6095,7 +6095,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #f4623a !important;
+  background-color: #7B99F9 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -10163,4 +10163,51 @@ header.masthead h1 {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
+}
+
+.col-lg-4 {
+  position: relative;
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+.mx-auto {
+  margin-right: auto !important;
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.mx-auto {
+  margin-right: auto !important;
+}
+
+.mx-auto {
+  margin-left: auto !important;
+}
+
+.btn-social {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+}
+
+.team-member {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.team-member img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.team-member h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
 }
