@@ -1,0 +1,140 @@
+.container-bar{
+  width: 100%;
+  max-width: 55px;
+  position: fixed;
+  left:0; 
+  top: 25%;
+}
+
+.container-bar a{
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  position: relative;
+  transition: all 2s ease;
+  color: #fff;
+  transition: width 5s ease;
+}
+
+.container-bar a:hover{
+  background: #2C3E50;
+ 
+
+  
+}
+
+
+.container-bar .fa-facebook-f{
+  background: linear-gradient(rgb(59, 89, 152),rgb(173,185,211));
+  border-radius: 0px 5px 0px 0px;
+  width: 55px;
+  height: 50px;
+  transition: width 2s;
+}
+
+.container-bar .fa-facebook-f:hover{
+  width: 100px;
+  background: linear-gradient(rgb(59, 89, 152),rgb(173,185,211));
+}
+
+.container-bar .fa-whatsapp{
+  background: #4dc247;
+  width: 55px;
+  height: 50px;
+  transition: width 2s;
+  border-radius: 0px 0px 5px 0px;
+}
+
+.container-bar .fa-whatsapp:hover{
+width: 100px;
+ background: #4dc247;
+}
+
+.container-bar .fa-youtube{
+  background: #bb0000;
+   width: 55px;
+  height: 50px;
+  transition: width 2s;
+  border-radius: 0px 0px 5px 0px;
+}
+.container-bar .fa-youtube:hover{
+width: 100px;
+ background: #bb0000;
+}
+.container-bar .fa-instagram{
+background: linear-gradient(rgb(81,91,212),rgb(129, 52, 175),rgb(221, 42, 123),rgb(254,218,119),rgb(245,113,41));
+   border-radius: 0px 0px 5px 0px;
+    width: 55px;
+  height: 50px;
+  transition: width 2s;
+}
+.container-bar .fa-instagram:hover{
+  width: 100px;
+  background: linear-gradient(rgb(81,91,212),rgb(129, 52, 175),rgb(221, 42, 123),rgb(254,218,119),rgb(245,113,41));
+}
+
+ .container-bar #letra{
+  position: fixed;
+  background: #5F6A6A;
+  padding: 6px;
+  border-radius: 3px;
+  font-size: 15px;
+  margin-top: -4px;
+  transition: all 2s ease;
+  opacity: 0;
+  visibility: hidden;
+  
+ }
+ 
+ .container-bar a:hover #letra{
+  opacity: 1;
+  visibility: visible;
+  margin-left: 30px;
+ }
+
+
+ .container-bar #letra:after{
+  position: absolute;
+  content: '';
+  border-left: 7px solid transparent;
+  border-right: 6px solid #5F6A6A;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  right: 100%;
+  top:8px;
+ }
+
+ #btn-social{
+   display: none;
+ }
+
+
+
+ .fa-play{
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: inline-block;
+  transform: rotate(180deg);
+  color: #49b0e6;
+ }
+
+
+ #btn-social:checked ~ .fa-play{
+   transform: rotate(0deg);
+ }
+
+ 
+  .icon-social{
+    transition: all 0.3s ease;
+    transform: translateX(0%);
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.9);
+ 
+
+  }
+
+#btn-social:checked ~ .icon-social{
+   transform: translateX(-100%);
+}
