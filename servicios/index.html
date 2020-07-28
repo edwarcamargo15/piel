@@ -51,8 +51,8 @@
                 <ul class="navbar-nav ml-auto my-2 my-lg-0">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../productos/index.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#ofertas">Ofertas</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="" data-toggle="modal" data-target="#contactmodal">Contacto</a></li>
                      
@@ -89,8 +89,8 @@
                       <p class="card-text">Estos apuntan, al cuidado, limpieza y recuperación del cutis, relaja los músculos de la cara, mejorar la circulación de la zona y reduce las arrugas.</p>
                   </div>
                   <div class="card-footer">
-                    <a class="btn btn-info" href="">Leer Más</a>
-            <button type="button" class="btn btn-success">Agendar Cita</button>
+               <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal1">Leer Más</button>
+           <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalcita">Agendar Cita</button>
                   </div>
               </div>
               <div class="card">
@@ -100,8 +100,8 @@
                   <p class="card-text">Es la técnica estética que busca el embellecimiento y realce de nuestro rostro. Incluye: Limpieza básica de la zona, diseño y perfilación</p>
               </div>
               <div class="card-footer">
-                <a class="btn btn-info" href="servicios/index.html">Leer Más</a>
-            <button type="button" class="btn btn-success">Agendar Cita</button>
+           <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal2">Leer Más</button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalcita">Agendar Cita</button>            
               </div>
           </div>
           <div class="card">
@@ -112,8 +112,8 @@
           </div>
           <div class="card-footer">
             
-            <a class="btn btn-info" href="servicios/index.html">Leer Más</a>
-            <button type="button" class="btn btn-success">Agendar Cita</button>
+         <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal3">Leer Más</button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalcita">Agendar Cita</button>
           </div>
       </div>
   </div>
@@ -128,8 +128,8 @@
                       <p class="card-text">La piel de nuestro rostro va acumulando suciedad. Las impurezas producidas por el propio organismo y la contaminación del ambiente que nos rodea se van depositando en la piel y si no las eliminamos mediante un tratamiento, pueden llegar a provocar diferentes infecciones.</p>
                   </div>
                   <div class="card-footer">
-                   <a class="btn btn-info" href="servicios/index.html">Leer Más</a>
-                   <button type="button" class="btn btn-success">Agendar Cita</button>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal4">Leer Más</button>
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalcita">Agendar Cita</button>
                   </div>
               </div>
               <div class="card">
@@ -139,8 +139,8 @@
                   <p class="card-text">La termoterapia se define como terapia a base de calor, reduce la grasa, elimina celulitis, elimina toxinas, mejora la firmeza de la piel y evita las arañas vasculares</p>
               </div>
               <div class="card-footer">
-                 <a class="btn btn-info" href="servicios/index.html">Leer Más</a>
-            <button type="button" class="btn btn-success">Agendar Cita</button>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal5">Leer Más</button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalcita">Agendar Cita</button>
               </div>
           </div>
           <div class="card">
@@ -151,8 +151,9 @@
           </div>
           <div class="card-footer">
             
-            <a class="btn btn-info" href="servicios/index.html">Leer Más</a>
-            <button type="button" class="btn btn-success">Agendar Cita</button>
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal6">Leer Más</button>
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalcita">Agendar Cita</button>
+           
           </div>
       </div>
   </div>  
@@ -161,6 +162,282 @@
 </div>
 </section>
 <!-- fin Servicios-->
+<!-- MODALES-->
+<div class="modal fade" id="modalcita" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agendar Cita</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+ 
+    <div class="form-group ">
+      <label for="inputNombre">Nombre Completo</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Ingresa Nombre Completo">
+    </div>
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Tipo de Identificación</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+     <option>Seleccione Tipo Documento</option>
+      <option>Tarjeta de Identidad</option>
+      <option>Cedula De Ciudadania</option>
+      <option>Cedula De Extranjeria</option>
+      <option>Pasaporte</option>
+    </select>
+  </div>
+    <div class="form-group ">
+      <label for="inputEmail">Número de Identificación</label>
+      <input type="text" class="form-control" id="inputPassword4" placeholder="Ingresa Número de Identificación">
+    </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Género</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+     <option>Seleccione </option>
+      <option>Femenino</option>
+      <option>Masculino</option>
+    </select>
+  </div>  
+  <div class="form-group">
+    <label for="inputCelular">Número de Telefono o Celular</label>
+    <input type="number" class="form-control" id="inputAddress" placeholder="Número de Celular">
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="inputFecha">Fecha de Cita: </label>
+      <input type="date" id="fechnac" name="fechnac" class="form-control"  required autofocus>
+    </div>
+    <div class="col">
+      <label for="inputFecha">Hora de Cita: </label>
+          <input type="time" id="fechnac" name="fechnac" class="form-control"  required autofocus>
+    </div>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-success">Confirmar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fin Modales-->
+<!-- Modales-->
+<div class="modal fade  " id="modal1" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+    <img src="../assets/img/portfolio/fullsize/18.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a class="btn btn-success" href="../pago/index.html">Comprar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade  " id="modal2" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+    <img src="../assets/img/portfolio/fullsize/18.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a class="btn btn-success" href="../pago/index.html">Comprar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade  " id="modal3" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+    <img src="../assets/img/portfolio/fullsize/18.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a class="btn btn-success" href="../pago/index.html">Comprar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade  " id="modal4" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+    <img src="../assets/img/portfolio/fullsize/18.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a class="btn btn-success" href="../pago/index.html">Comprar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade  " id="modal5" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+    <img src="../assets/img/portfolio/fullsize/18.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a class="btn btn-success" href="../pago/index.html">Comprar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade  " id="modal6" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+    <img src="../assets/img/portfolio/fullsize/18.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <a class="btn btn-success" href="../pago/index.html">Comprar</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- fin Modales-->
+<!-- Modales-->
+<div class="modal fade" id="contactmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contáctanos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+ 
+    <div class="form-group ">
+      <label for="inputEmail4">Nombre Completo</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Ingresa Nombre Completo">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Email</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Ingresa Correo Electronico">
+    </div>
+  
+  <div class="form-group">
+    <label for="inputAddress">Número de Telefono o Celular</label>
+    <input type="number" class="form-control" id="inputAddress" placeholder="Número de Celular">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Dirección</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Direccion de Residencia">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Mensaje</label>
+    <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+    <br>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deja tú mensaje"></textarea>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-success">Enviar Mensaje</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
