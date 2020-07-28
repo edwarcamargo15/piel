@@ -10108,6 +10108,16 @@ header.masthead {
   background-size: cover;
 }
 
+header.masthead-agen {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/portfolio/fullsize/23.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
 header.masthead-serv{
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
@@ -10128,17 +10138,17 @@ header.masthead-prod{
   background-size: cover;
 }
 
-header.masthead .masthead-serv .masthead-prod h1 {
+header.masthead .masthead-serv .masthead-prod .masthead-agen h1 {
   font-size: 2.25rem;
 }
 @media (min-width: 992px) {
-  header.masthead .masthead-serv .masthead-prod {
+  header.masthead .masthead-serv .masthead-prod .masthead-agen{
     height: 100vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
   }
-  header.masthead .masthead-serv .masthead-prod p {
+  header.masthead .masthead-serv .masthead-prod .masthead-agen p {
     font-size: 1.15rem;
   }
   header.masthead .masthead-serv .masthead-prod h1 {
@@ -10146,7 +10156,7 @@ header.masthead .masthead-serv .masthead-prod h1 {
   }
 }
 @media (min-width: 1200px) {
-  header.masthead .masthead-serv .masthead-prod h1 {
+  header.masthead .masthead-serv .masthead-prod .masthead-agen h1 {
     font-size: 3.5rem;
   }
 }
