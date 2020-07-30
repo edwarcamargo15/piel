@@ -139,12 +139,59 @@ background: linear-gradient(rgb(81,91,212),rgb(129, 52, 175),rgb(221, 42, 123),r
    transform: translateX(-100%);
 }
 
-#footer{
-  padding:10%;
-  background-color: black;
-  
-}
 .licencia{
   width:220%;
   color:white;
 }
+footer{
+ 
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr ;
+  color: white;
+}
+.empresa-footer-empresa{
+  position: relative;
+  top:5%;
+  width: 40%;
+  left: 10%;
+}
+.empresa-footer-menu{ 
+  position: relative;
+  top:5%;
+  width: 40%;
+}
+.menu-footer > ul >li{
+  list-style: none;
+}
+.empresa-footer-administracion{  
+  position: relative;
+  top:5%;
+  width: 40%;
+}
+.empresa-footer-publicaciones{
+  position: relative;
+  top:5%;
+  width: 40%;
+}
+
+.container-licencia{
+  grid-column-start:1;
+  grid-column-end: 4;
+  grid-row-start:3;
+  grid-row-end:3;
+  right: 10%;
+  position: relative;
+  left:  10%;
+
+}
+.parrafo-empresa{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  width: 190%;
+}
+
+
+
+
