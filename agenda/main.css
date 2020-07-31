@@ -22,7 +22,7 @@ table>tbody>tr>td {
     position: absolute !important;
 }
 
-#agregar{
-    display: block;
-    margin-right: auto;
+.fab:hover{
+    color: white;
 }
+
