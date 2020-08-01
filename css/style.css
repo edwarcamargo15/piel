@@ -166,6 +166,11 @@ footer{
   color: #FFDD00;
   left: 0%;
 }
+.contacto-footer > #ico-contact:hover{
+  font-size: 150%;
+  color:white;
+  left: 0%;
+}
 .parrafo-empresa{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
@@ -180,9 +185,15 @@ footer{
   top:5%;
   width: 40%;
   left: 20%;
+  
+}
+.menu-footer > h6{
+  text-align: center;
 }
 .menu-footer > ul >li{
   list-style: none;
+  position: relative;
+  left: 0%;
 }
 .empresa-footer-administracion{  
 
@@ -211,13 +222,22 @@ footer{
   left: 19%;
   
 }
-.politica-footer{
+.pagos-footer{
   position: relative;
   grid-row-start: 2;
   grid-row-end: 3;
   top: 5%;
-
+  right: -30%;
 }
+.pagos-footer > .fab{
+  font-size: 140%;
+  color: #FFDD00;
+}
+.pagos-footer > .fab:hover{
+  font-size: 160%;
+  color: white;
+}
+
 .container-licencia{
   grid-column-start:2;
   grid-column-end: 4;
@@ -236,7 +256,11 @@ footer{
   font-size: 140%;
   color: #FFDD00;
   text-align: left;
-
+}
+.iconos-redes > .fab:hover{
+  font-size: 160%;
+  color: white;
+  text-align: left;
 }
 
 #mc_embed_signup{
@@ -250,11 +274,25 @@ footer{
   margin: 2%;
   padding: 2%;
 }
+#mce-EMAIL:hover{
+  border-radius: 10px;
+  width: 230%;
+  margin: 2%;
+  padding: 2%;
+  transform: scale(110%);
+}
 #mc-embedded-subscribe{
   border-radius: 5px;
   margin-top: 15%;
   background-color: #FFDD00;
   font-style: bold;
+}
+#mc-embedded-subscribe:hover{
+  border-radius: 5px;
+  margin-top: 15%;
+  background-color:#FFDD00;
+  font-style: bold;
+  transform: scale(110%);
 }
 
 
