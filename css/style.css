@@ -151,6 +151,8 @@ footer{
   grid-template-rows: 1fr 1fr 1fr ;
   color: white;
   height: 60%;
+  opacity: 0.9;
+  
 }
 .empresa-footer-empresa{
   
