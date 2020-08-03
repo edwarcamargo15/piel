@@ -138,6 +138,8 @@ background: linear-gradient(rgb(81,91,212),rgb(129, 52, 175),rgb(221, 42, 123),r
 #btn-social:checked ~ .icon-social{
    transform: translateX(-100%);
 }
+<<<<<<< HEAD
+=======
 
 .licencia{
   width:220%;
@@ -304,3 +306,4 @@ footer{
 
 
 
+>>>>>>> master
