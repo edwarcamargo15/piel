@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+     <link href="../css/styles.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Favicon-->
+   <link rel="icon" type="image/x-icon" href="../assets/img/agenda.png" />
+    <!-- Font Awesome icons (free version)-->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+    <!-- Third party plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+
+    <!--DATABLES-->
+   
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="datatables/bootstrap/css/bootstrap.min.css">
+   <!-- CSS personalizado --> 
+   <link rel="stylesheet" href="datatables/main.css">  
+     
+   <!--datables CSS básico-->
+   <link rel="stylesheet" type="text/css" href="datatables/datatables/datatables.min.css"/>
+   <!--datables estilo bootstrap 4 CSS-->  
+   <link rel="stylesheet"  type="text/css" href="datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
+          
+   <!--font awesome con CDN-->  
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">  
+
+    
+
+    
+    <!-- Core theme CSS (includes Bootstrap)-->
+	
+	<title>Agenda Citas</title>
+	
+</head>
+<body id="page-top">
+<div class="container-bar">
+      <input type="checkbox" id="btn-social">
+      <label for="btn-social" class="fas fa-play" ></label>
+      <div class="icon-social">
+        <a href="https://www.facebook.com/" class="fab fa-facebook-f">
+          <span id="letra">Facebook</span>
+        </a>
+        <a href="https://web.whatsapp.com/"  class="fab fa-whatsapp">
+           <span id="letra">Whatsapp</span>
+        </a>
+        <a href="https://www.youtube.com/"  class="fab fa-youtube">
+           <span id="letra">Youtube</span>
+        </a>
+        <a href="https://www.instagram.com/"  class="fab fa-instagram">
+            <span id="letra">Instagram</span>
+         </a>
+      </div>
+
+    </div>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="../index.html">CUIDADOS DE LA PIEL</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="../servicios/index.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Citas</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#ofertas">Ofertas</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="" data-toggle="modal" data-target="#contactmodal">Contacto</a></li>
+                     
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead-agen">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-10 align-self-end">
+                    <h1 class="text-uppercase text-white font-weight-bold">CITAS</h1>
+                    <hr class="divider my-4" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-white-75 font-weight-light mb-5">AGREGAR NUEVO TEXTO<br> 
+                        AGREGAR NUEVO TEXTO</p>
+                </div>
+            </div>
+        </div>
+    </header>
+<!-- Servicios-->
+    <section class="page-section" id="services">
+        <div class="container">
+        
+            <h2 class="text-center mt-0">¡Agenda Tú Cita!</h2>
+            <hr class="divider my-4" />
+            <div class="row">           
+            </div>
+<br>
+
+ 
+<table id="myTable" class="table table-striped table-bordered" style="width:100%">
+        <thead style="text-align: center;">
+            <tr>
+                <th>Nombre Completo</th>
+                <th>Número De Identificación</th>
+                <th>Género</th>
+                <th>Edad</th>
+                <th>Número De Celular</th>
+                <th>Servicio</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Estado</th>
+                <th>Acción</th>
+            </tr>
+        </thead>
+        <tbody style="text-align:center;">
+            <tr style="">
+                <td>Edwar Yesid Camargo Roa</td>
+                <td>1090487891</td>
+                <td>Masculino</td>
+                <td>25</td>
+                <td>3217555652</td>
+                <td>Masaje</td>
+                <td>29/07/2020</td>
+                <td>2:30 pm</td>
+                <td>
+                  <button class="btn btn-success" style="border-radius: 20px; text-align: center;">Exitoso</button>
+                </td>
+                
+                  <td style="color: white; display: inline-flex;"> 
+                   <button type="button" class="btn btn-primary fas fa-edit" data-toggle="modal" data-target="#modaleditar"></button> 
+                 <button type="button" class="btn btn-success fas fa-eye" data-toggle="modal" data-target="#modalver"></button>
+                 <button type="button" class="btn btn-danger fas fa-trash-alt" data-toggle="modal" data-target="#modaleli"></button>
+                </td>
+            </tr>
+
+            <tr style="">
+                <td>Edwar Yesid Camargo Roa</td>
+                <td>1090487891</td>
+                <td>Masculino</td>
+                <td>25</td>
+                <td>3217555652</td>
+                <td>Masaje</td>
+                <td>27/07/2020</td>
+                <td>2:30 pm</td>
+                <td>
+                  <button class="btn btn-dark" style="border-radius: 20px; text-align: center;">Cancelado</button>
+                </td>
+                
+                  <td style="color: white; display: inline-flex;"> 
+                  <button type="button" class="btn btn-primary fas fa-edit" data-toggle="modal" data-target="#modaleditar"></button> 
+                 <button type="button" class="btn btn-success fas fa-eye" data-toggle="modal" data-target="#modalver"></button>
+                 <button type="button" class="btn btn-danger fas fa-trash-alt" data-toggle="modal" data-target="#modaleli"></button>
+                </td>
+            </tr>
+
+            <tr style="">
+                <td>Edwar Yesid Camargo Roa</td>
+                <td>1090487891</td>
+                <td>Masculino</td>
+                <td>25</td>
+                <td>3217555652</td>
+                <td>Masaje</td>
+                <td>22/07/2020</td>
+                <td>6:30 pm</td>
+                <td>
+                  <button class="btn btn-danger" style="border-radius: 20px; text-align: center;">Fallida</button>
+                </td>
+                
+                  <td style="color: white; display: inline-flex;"> 
+                  <button type="button" class="btn btn-primary fas fa-edit" data-toggle="modal" data-target="#modaleditar"></button> 
+                 <button type="button" class="btn btn-success fas fa-eye" data-toggle="modal" data-target="#modalver"></button>
+                 <button type="button" class="btn btn-danger fas fa-trash-alt" data-toggle="modal" data-target="#modaleli"></button>
+                </td>
+            </tr>
+
+            <tr style="">
+                <td>Edwar Yesid Camargo Roa</td>
+                <td>1090487891</td>
+                <td>Masculino</td>
+                <td>25</td>
+                <td>3217555652</td>
+                <td>Masaje</td>
+                <td>29/07/2020</td>
+                <td>6:30 pm</td>
+                <td>
+                  <button class="btn btn-warning" style="border-radius: 20px; text-align: center;">Pendiente</button>
+                </td>
+                
+                   <td style="color: white; display: inline-flex;"> 
+                  <button type="button" class="btn btn-primary fas fa-edit" data-toggle="modal" data-target="#modaleditar"></button> 
+                 <button type="button" class="btn btn-success fas fa-eye" data-toggle="modal" data-target="#modalver"></button>
+                 <button type="button" class="btn btn-danger fas fa-trash-alt" data-toggle="modal" data-target="#modaleli"></button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot style="text-align: center;">
+            <tr>
+                <th>Nombre Completo</th>
+                <th>Número De Identificación</th>
+                <th>Género</th>
+                <th>Edad</th>
+                <th>Número De Celular</th>
+                <th>Servicio</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Estado</th>
+                <th>Acción</th>
+            </tr>
+        </tfoot>
+    </table>
+
+</div>
+</section>
+<!-- fin Servicios-->
+<!-- Modales-->
+
+<!-- fin Modales-->
+
+<!-- Modales-->
+<div class="modal fade" id="contactmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contáctanos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+ 
+    <div class="form-group ">
+      <label for="inputEmail4">Nombre Completo</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Ingresa Nombre Completo">
+    </div>
+    <div class="form-group ">
+      <label for="inputPassword4">Email</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Ingresa Correo Electronico">
+    </div>
+  
+  <div class="form-group">
+    <label for="inputAddress">Número de Telefono o Celular</label>
+    <input type="number" class="form-control" id="inputAddress" placeholder="Número de Celular">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Dirección</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Direccion de Residencia">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Mensaje</label>
+    <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+    <br>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deja tú mensaje"></textarea>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-success">Enviar Mensaje</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- MODALES-->
+<div class="modal fade" id="modalcita" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agendar Cita</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+ 
+    <div class="form-group ">
+      <label for="inputNombre">Nombre Completo</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Ingresa Nombre Completo">
+    </div>
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Tipo de Identificación</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+     <option>Seleccione Tipo Documento</option>
+      <option>Tarjeta de Identidad</option>
+      <option>Cedula De Ciudadania</option>
+      <option>Cedula De Extranjeria</option>
+      <option>Pasaporte</option>
+    </select>
+  </div>
+    <div class="form-group ">
+      <label for="inputEmail">Número de Identificación</label>
+      <input type="text" class="form-control" id="inputPassword4" placeholder="Ingresa Número de Identificación">
+    </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Género</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+     <option>Seleccione </option>
+      <option>Femenino</option>
+      <option>Masculino</option>
+    </select>
+  </div>  
+  <div class="form-group">
+    <label for="inputCelular">Número de Telefono o Celular</label>
+    <input type="number" class="form-control" id="inputAddress" placeholder="Número de Celular">
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="inputFecha">Fecha de Cita: </label>
+      <input type="date" id="fechnac" name="fechnac" class="form-control"  required autofocus>
+    </div>
+    <div class="col">
+      <label for="inputFecha">Hora de Cita: </label>
+          <input type="time" id="fechnac" name="fechnac" class="form-control"  required autofocus>
+    </div>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-success">Confirmar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fin Modales-->
+
+
+<!-- MODALES-->
+<div class="modal fade" id="modaleditar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agendar Cita</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+ 
+    <div class="form-group ">
+      <label for="inputNombre">Nombre Completo</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Ingresa Nombre Completo">
+    </div>
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Tipo de Identificación</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+     <option>Seleccione Tipo Documento</option>
+      <option>Tarjeta de Identidad</option>
+      <option>Cedula De Ciudadania</option>
+      <option>Cedula De Extranjeria</option>
+      <option>Pasaporte</option>
+    </select>
+  </div>
+    <div class="form-group ">
+      <label for="inputEmail">Número de Identificación</label>
+      <input type="text" class="form-control" id="inputPassword4" placeholder="Ingresa Número de Identificación">
+    </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Género</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+     <option>Seleccione </option>
+      <option>Femenino</option>
+      <option>Masculino</option>
+    </select>
+  </div>  
+  <div class="form-group">
+    <label for="inputCelular">Número de Telefono o Celular</label>
+    <input type="number" class="form-control" id="inputAddress" placeholder="Número de Celular">
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="inputFecha">Fecha de Cita: </label>
+      <input type="date" id="fechnac" name="fechnac" class="form-control"  required autofocus>
+    </div>
+    <div class="col">
+      <label for="inputFecha">Hora de Cita: </label>
+          <input type="time" id="fechnac" name="fechnac" class="form-control"  required autofocus>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Estado Cita</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+     <option>Seleccione </option>
+      <option>Pendiente</option>
+      <option>Exitoso</option>
+      <option>Cancelado</option>
+      <option>Fallida</option>
+    </select>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        
+        <button type="button" class="btn btn-success">Confirmar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fin Modales-->
+
+<!-- MODALES-->
+<div class="modal fade" id="modalver" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agendar Cita</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form>
+ 
+    <div class="form-group ">
+      <label for="inputNombre">Nombre Completo</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Ingresa Nombre Completo" disabled>
+    </div>
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Tipo de Identificación</label>
+    <select class="form-control" id="exampleFormControlSelect1" disabled>
+     <option>Seleccione Tipo Documento</option>
+      <option>Tarjeta de Identidad</option>
+      <option>Cedula De Ciudadania</option>
+      <option>Cedula De Extranjeria</option>
+      <option>Pasaporte</option>
+    </select>
+  </div>
+    <div class="form-group ">
+      <label for="inputEmail">Número de Identificación</label>
+      <input type="text" class="form-control" id="inputPassword4" placeholder="Ingresa Número de Identificación" disabled>
+    </div>
+
+    <div class="form-group">
+    <label for="exampleFormControlSelect1">Género</label>
+    <select class="form-control" id="exampleFormControlSelect1" disabled>
+     <option>Seleccione </option>
+      <option>Femenino</option>
+      <option>Masculino</option>
+    </select>
+  </div>  
+  <div class="form-group">
+    <label for="inputCelular">Número de Telefono o Celular</label>
+    <input type="number" class="form-control" id="inputAddress" placeholder="Número de Celular" disabled>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label for="inputFecha">Fecha de Cita: </label>
+      <input type="date" id="fechnac" name="fechnac" class="form-control"  required autofocus disabled>
+    </div>
+    <div class="col">
+      <label for="inputFecha">Hora de Cita: </label>
+          <input type="time" id="fechnac" name="fechnac" class="form-control"  required autofocus disabled>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Estado Cita</label>
+    <select class="form-control" id="exampleFormControlSelect1" disabled>
+     <option>Seleccione </option>
+      <option>Pendiente</option>
+      <option>Exitoso</option>
+      <option>Cancelado</option>
+      <option>Fallida</option>
+    </select>
+  </div>
+</form>
+      </div>
+      <div class="modal-footer">
+        
+        
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- fin Modales-->
+<!--Ejemplo tabla con DataTables-->
+<div class="container">
+  <div class="row">
+          <div class="col-lg-12">
+              <div class="table-responsive">        
+                  <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                  <thead>
+                      <tr>
+                          <th>Nombre</th>
+                          <th>Puesto</th>
+                          <th>Ciudad</th>                               
+                          <th>Año de Ingreso</th>
+                          <th>Salario</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>Tiger Nixon</td>
+                          <td>Arquitecto</td>
+                          <td>Edinburgh</td>                                
+                          <td>2011/04/25</td>
+                          <td>$320,800</td>
+                      </tr>
+                      <tr>
+                          <td>Garrett Winters</td>
+                          <td>Contador</td>
+                          <td>Tokyo</td>                                
+                          <td>2011/07/25</td>
+                          <td>$170,750</td>
+                      </tr>                
+                      <tr>
+                          <td>Cedric Kelly</td>
+                          <td>Senior Javascript Developer</td>
+                          <td>Edinburgh</td>                                
+                          <td>2012/03/29</td>
+                          <td>$433,060</td>
+                      </tr> 
+                             <tr>
+                          <td>Jonas Alexander</td>
+                          <td>Developer</td>
+                          <td>San Francisco</td>                                
+                          <td>2010/07/14</td>
+                          <td>$86,500</td>
+                      </tr>                           
+                  </tbody>        
+                 </table>                  
+              </div>
+          </div>
+  </div>  
+</div>    
+
+<!-- Modal Eli-->
+<div class="modal fade" id="modaleli" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="card text-white bg-danger mb-3" style="max-width: 35rem;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cancelar Cita</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="alert alert-danger" role="alert">
+         ¿Estás seguro de cancelar su cita?
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Aceptar</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- fin Modales-->
+
+ 
+ 
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- Third party plugin JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="../js/scripts.js"></script>
+</html>
