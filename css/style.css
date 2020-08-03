@@ -138,3 +138,172 @@ background: linear-gradient(rgb(81,91,212),rgb(129, 52, 175),rgb(221, 42, 123),r
 #btn-social:checked ~ .icon-social{
    transform: translateX(-100%);
 }
+<<<<<<< HEAD
+=======
+
+.licencia{
+  width:220%;
+  color:white;
+}
+footer{
+ 
+  background-color: black;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr ;
+  color: white;
+  height: 60%;
+  opacity: 0.9;
+  
+}
+.empresa-footer-empresa{
+  
+  grid-row-start:1;
+  grid-row-end:2;
+  position: relative;
+  top:5%;
+  width: 90%;
+  left: 20%;
+}
+.contacto-footer > #ico-contact{
+  font-size: 140%;
+  color: #FFDD00;
+  left: 0%;
+}
+.contacto-footer > #ico-contact:hover{
+  font-size: 150%;
+  color:white;
+  left: 0%;
+}
+.parrafo-empresa{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  width: 100%;
+  justify-content: center;
+}
+.empresa-footer-menu{ 
+
+  grid-row-start:1;
+  grid-row-end:2;
+  position: relative;
+  top:5%;
+  width: 40%;
+  left: 20%;
+  
+}
+.menu-footer > h6{
+  text-align: center;
+}
+.menu-footer > ul >li{
+  list-style: none;
+  position: relative;
+  left: 0%;
+}
+.empresa-footer-administracion{  
+
+  grid-row-start:1;
+  grid-row-end:2;
+  position: relative;
+  top:5%;
+  width: 40%;
+  
+}
+.empresa-footer-publicaciones{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start:1;
+  grid-row-end:2;
+  position: relative;
+  top:5%;
+  width: 65%;
+  
+  left: 30%;
+}
+.contacto-footer{
+  position: relative;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  left: 19%;
+  
+}
+.pagos-footer{
+  position: relative;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  top: 5%;
+  right: -30%;
+}
+.pagos-footer > .fab{
+  font-size: 140%;
+  color: #FFDD00;
+}
+.pagos-footer > .fab:hover{
+  font-size: 160%;
+  color: white;
+}
+
+.container-licencia{
+  grid-column-start:2;
+  grid-column-end: 4;
+  grid-row-start:2;
+  grid-row-end:3;
+  right: 10%;
+  position: relative;
+  left:  10%;
+  top: 50%;
+ 
+ 
+
+}
+
+.iconos-redes > .fab{
+  font-size: 140%;
+  color: #FFDD00;
+  text-align: left;
+}
+.iconos-redes > .fab:hover{
+  font-size: 160%;
+  color: white;
+  text-align: left;
+}
+
+#mc_embed_signup{
+  background:transparent; 
+  clear:left; 
+  
+}
+#mce-EMAIL{
+  border-radius: 10px;
+  width: 230%;
+  margin: 2%;
+  padding: 2%;
+}
+#mce-EMAIL:hover{
+  border-radius: 10px;
+  width: 230%;
+  margin: 2%;
+  padding: 2%;
+  transform: scale(110%);
+}
+#mc-embedded-subscribe{
+  border-radius: 5px;
+  margin-top: 15%;
+  background-color: #FFDD00;
+  font-style: bold;
+}
+#mc-embedded-subscribe:hover{
+  border-radius: 5px;
+  margin-top: 15%;
+  background-color:#FFDD00;
+  font-style: bold;
+  transform: scale(110%);
+}
+
+
+                      
+
+
+
+
+
+>>>>>>> master
