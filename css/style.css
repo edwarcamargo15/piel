@@ -138,8 +138,6 @@ background: linear-gradient(rgb(81,91,212),rgb(129, 52, 175),rgb(221, 42, 123),r
 #btn-social:checked ~ .icon-social{
    transform: translateX(-100%);
 }
-<<<<<<< HEAD
-=======
 
 .licencia{
   width:220%;
@@ -300,10 +298,102 @@ footer{
 }
 
 
+@media only screen and (max-width:900px){
+  footer{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    color: white;
+    height: auto;
+    opacity: 0.9;
+    
+    
+  }
+  .empresa-footer-empresa{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:1;
+    grid-row-end:2;
+    position: relative;
+    text-align: center;
+    width: 50%;
+   
+  }
+
+  .empresa-footer-menu{ 
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:2;
+    grid-row-end:3;
+    position: relative;
+    text-align: center;
+  }
+  .menu-footer > h6{
+    text-align: center;
+    position: relative;
+    left: 12%;
+  }
+
+  .empresa-footer-administracion{  
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:3;
+    grid-row-end:4;
+    position: relative; 
+  }
+
+  .empresa-footer-publicaciones{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start:4;
+    grid-row-end:5;
+    position: relative;
+   
+   
+  
+  }
+  .contacto-footer{
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    left: 30%;
+    
+  
+    
+  }
+  .pagos-footer{
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  
+  }
+  .container-licencia{
+    grid-column-start:1;
+    grid-column-end: 2;
+    grid-row-start:7;
+    grid-row-end:8;
+    width:90%;
+    position: relative;
+    text-align: center;
+    top: 20%;
+    left: 4%;
+  }
+
+
+
+
+}
+
+
+
                       
 
 
 
 
 
->>>>>>> master
