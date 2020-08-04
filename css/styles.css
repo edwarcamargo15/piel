@@ -10015,6 +10015,7 @@ hr.divider {
   border-color: #f4623a;
 }
 
+
 hr.light {
   border-color: #fff;
 }
@@ -10102,6 +10103,16 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/producto/2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead1 {
+  padding-top: 8rem;
+  padding-bottom: calc(7rem - 3rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/tipos-de-piel.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10265,7 +10276,7 @@ header.masthead .masthead-serv .masthead-prod .masthead-agen .masthead-oferta h1
 }
 
 .pregresp {
-  border: 1px solid #7DA5E0;
+  border: 1px solid #3d0130;
   padding: 10px;
   margin: 10px;
   font-family: Arial, Verdana, Helvetica, sans-serif;
@@ -10274,7 +10285,7 @@ header.masthead .masthead-serv .masthead-prod .masthead-agen .masthead-oferta h1
   }
   
   .pregunta {
-  color: #7DA5E0;
+  color: #830452;
   }
   
   .respuestas {
